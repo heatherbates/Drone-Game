@@ -242,6 +242,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: fa48625dba398e34585e22d8ce6fd270, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  hasCrashed: 0
   thrust: 300
 --- !u!212 &1429208895
 SpriteRenderer:
@@ -276,7 +277,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 1
+  m_SortingOrder: 3
   m_Sprite: {fileID: 21300000, guid: 174105dbeb59aba449d115fd6c396013, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
@@ -526,9 +527,9 @@ GameObject:
   - component: {fileID: 1753707016}
   - component: {fileID: 1753707015}
   - component: {fileID: 1753707014}
-  - component: {fileID: 1753707013}
   - component: {fileID: 1753707012}
   - component: {fileID: 1753707018}
+  - component: {fileID: 1753707013}
   m_Layer: 0
   m_Name: Background13 (copy)
   m_TagString: Untagged
@@ -564,7 +565,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 1753707011}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: dea7cf7fff24b8142bb109ea5fb57970, type: 3}
+  m_Script: {fileID: 11500000, guid: ff7af3a8b1cd7684984f0d8d3c6cc120, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   scrollvelocity: 2
@@ -697,9 +698,9 @@ GameObject:
   - component: {fileID: 1894499609}
   - component: {fileID: 1894499611}
   - component: {fileID: 1894499612}
-  - component: {fileID: 1894499613}
   - component: {fileID: 1894499614}
   - component: {fileID: 1894499615}
+  - component: {fileID: 1894499613}
   m_Layer: 0
   m_Name: Background13
   m_TagString: Untagged
@@ -822,7 +823,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 1894499608}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: dea7cf7fff24b8142bb109ea5fb57970, type: 3}
+  m_Script: {fileID: 11500000, guid: ff7af3a8b1cd7684984f0d8d3c6cc120, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   scrollvelocity: 2
@@ -857,3 +858,83 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 54f969f5ff57b39478677b7eb08488e8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!1 &2102933610
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 2102933612}
+  - component: {fileID: 2102933611}
+  - component: {fileID: 2102933614}
+  - component: {fileID: 2102933613}
+  m_Layer: 0
+  m_Name: GameArea
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &2102933611
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 2102933610}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 06c7ea13e931338429cb8944222dbe54, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  LaserPoolSize: 3
+  LaserPrefab: {fileID: 1971828915327468, guid: d6045614353461f479b0c867e4fc5371,
+    type: 2}
+  time: 10
+  ymin: -1
+  ymax: 3
+--- !u!4 &2102933612
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 2102933610}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 4
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &2102933613
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 2102933610}
+  m_Enabled: 0
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ff7af3a8b1cd7684984f0d8d3c6cc120, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  scrollvelocity: 2
+--- !u!50 &2102933614
+Rigidbody2D:
+  serializedVersion: 4
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 2102933610}
+  m_BodyType: 1
+  m_Simulated: 1
+  m_UseFullKinematicContacts: 0
+  m_UseAutoMass: 0
+  m_Mass: 1
+  m_LinearDrag: 0
+  m_AngularDrag: 0.05
+  m_GravityScale: 1
+  m_Material: {fileID: 0}
+  m_Interpolate: 0
+  m_SleepingMode: 1
+  m_CollisionDetection: 0
+  m_Constraints: 0

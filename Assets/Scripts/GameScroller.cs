@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class BackgroundScroller : MonoBehaviour {
+public class GameScroller : MonoBehaviour {
 
 	public float scrollvelocity = 2.0f; // variable to determine background speed
 	private Rigidbody2D rb2d; // private variable to store physics component

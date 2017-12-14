@@ -51,9 +51,11 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-     <Compile Include="Assets\Scripts\BackgroundScroller.cs" />
      <Compile Include="Assets\Scripts\ContinuousBackground.cs" />
+     <Compile Include="Assets\Scripts\DeactivateLaser.cs" />
      <Compile Include="Assets\Scripts\DroneController.cs" />
+     <Compile Include="Assets\Scripts\GameScroller.cs" />
+     <Compile Include="Assets\Scripts\GenerateObstacles.cs" />
  <Reference Include="UnityEngine.UI">
  <HintPath>C:/Program Files/Unity/Editor/Data/UnityExtensions/Unity/GUISystem/UnityEngine.UI.dll</HintPath>
  </Reference>
