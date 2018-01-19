@@ -5,14 +5,14 @@ using UnityEngine;
 public class GameScroller : MonoBehaviour {
 
 	public float scrollvelocity = 2.0f; // variable to determine background speed
-	private Rigidbody2D rb2d; // private variable to store physics component
+	private Rigidbody2D rb2d; 			// private variable to store physics component
 
 
 	void Start ()  // Called when initialised
 	{
-		rb2d = GetComponent<Rigidbody2D> (); // reference to physics component
-		rb2d.velocity = new Vector2 (-scrollvelocity,0); // makes backgound move at
-														// set speed in x direction
+		rb2d = GetComponent<Rigidbody2D> (); 				// reference to physics component
+		rb2d.velocity = new Vector2 (-scrollvelocity,0); 	// makes backgound move at
+															// set speed in x direction
 	}
 
 	void Update () // Called once per frame

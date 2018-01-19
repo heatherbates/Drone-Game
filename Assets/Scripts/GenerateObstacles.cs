@@ -4,11 +4,11 @@ using UnityEngine;
 
 public class GenerateObstacles : MonoBehaviour {
 
-	public int LaserPoolSize = 3; // size of array
-	public GameObject LaserPrefab; // reference to prefab I will be instantiating
-	public float time = 6f; // allocated time between spawns
-	public float ymin = -1f; // minimum y position of laser
-	public float ymax = 3f; // maximum position of laser
+	public int LaserPoolSize = 3; 	// size of array
+	public GameObject LaserPrefab; 	// reference to prefab I will be instantiating
+	public float time = 6f; 		// allocated time between spawns
+	public float ymin = -1f; 		// minimum y position of laser
+	public float ymax = 3f; 		// maximum position of laser
 
 	private GameObject[] LaserObstacle; // defines array
 	private Vector2 PoolPosition = new Vector2(-100,-100); // offscreen position to store prefabs

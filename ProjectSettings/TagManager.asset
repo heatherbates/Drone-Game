@@ -6,6 +6,7 @@ TagManager:
   tags:
   - laserobject
   - beam
+  - diamond
   layers:
   - Default
   - TransparentFX

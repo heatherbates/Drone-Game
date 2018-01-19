@@ -13,7 +13,8 @@ public class ContinuousBackground : MonoBehaviour {
 
 	void Update () // Called once per frame
 	{
-		if (transform.position.x <- length) // compares postion of 
+		//compares x-distance background is away from camera with length of background
+		if (transform.position.x <- length)
 		{
 			LeapFrog(); // calls funtion if leftmost background out of view
 		}
@@ -26,3 +27,4 @@ public class ContinuousBackground : MonoBehaviour {
 		transform.position = (Vector2)transform.position + jump; // jumps object
 	}
 }
+

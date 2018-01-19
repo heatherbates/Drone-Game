@@ -56,6 +56,11 @@
      <Compile Include="Assets\Scripts\DroneController.cs" />
      <Compile Include="Assets\Scripts\GameScroller.cs" />
      <Compile Include="Assets\Scripts\GenerateObstacles.cs" />
+     <Compile Include="Assets\Scripts\PlaceDiamonds.cs" />
+     <Compile Include="Assets\Scripts\RotateDiamonds.cs" />
+     <Compile Include="Assets\Scripts\UserInterface.cs" />
+     <None Include="Assets\Scenes\Materials\Basic Metal Texture Pack\readme.txt" />
+     <None Include="Assets\Sounds\explosionsoundslite\readme.txt" />
  <Reference Include="UnityEngine.UI">
  <HintPath>C:/Program Files/Unity/Editor/Data/UnityExtensions/Unity/GUISystem/UnityEngine.UI.dll</HintPath>
  </Reference>
