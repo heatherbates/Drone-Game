@@ -21,5 +21,12 @@ public class GameScroller : MonoBehaviour {
 		{
 			rb2d.velocity = Vector2.zero; // sets the velocity of the background to zero if crashed
 		}
+
+		//if (DroneController.instance.hasCrashed == false) // checks to see if drone has crashed
+		//{ 
+			//scrollvelocity = scrollvelocity + 0.01f;
+			//rb2d.velocity = new Vector2 (-scrollvelocity, 0);
+		//}
 	}
+
 }

@@ -56,7 +56,7 @@ public class DroneController : MonoBehaviour {
 		{
 			//reference to the gameObject of the diamond that has been collided with
 			diamond = diamondcollider.gameObject.GetComponent<SpriteRenderer> ();
-			diamond.sortingOrder = 0; // sets sorting order to 0, so diamond is not visible
+			diamond.sortingOrder = -1; // sets sorting order to 0, so diamond is not visible
 			//reference to the collider of the diamond that has been collided with
 			collider = diamondcollider.gameObject.GetComponent<CircleCollider2D> ();
 			collider.enabled = false; //disables the collider attached to the diamond
